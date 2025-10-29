@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Socials</title>
+    <link rel="shortcut icon" href="./images/favicon-32x32.png" type="image/x-icon">
+    <style>
+        @font-face {
+            font-family: 'Inter';
+            src: url('fonts/Inter-VariableFont_slnt\,wght.ttf') format('truetype');
+        }
+
+        :root {
+            --cordestaque: rgb(218, 126, 218);
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            background-color: rgb(24, 24, 24);
+            margin: 150px;
+        }
+
+        section {
+            border-radius: 20px;
+            text-align: center;
+            min-width: 320px;
+            max-width: 350px;
+            height: 520px;
+            background-color: rgb(43, 42, 42);
+            margin: auto;
+            padding: 30px;
+        }
+
+        section img {
+            width: 100px;
+            border-radius: 50%;
+        }
+
+        section h1 {
+            font-size: 1.7em;
+            font-family: 'Inter';
+            margin: 0px;
+        }
+
+        .localidade {
+            font-family: 'Inter';
+            color: var(--cordestaque);
+            margin: 0px;
+            padding-bottom: 10px;
+        }
+
+        nav a {
+            display: block;
+            color: white;
+            background-color: rgba(68, 68, 68, 0.493);
+            font-family: 'Inter';
+            font-weight: bold;
+            text-decoration: none;
+            box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.247);
+            border-radius: 10px;
+            padding: 13px;
+        }
+
+        nav a:hover {
+            color: black;
+            background-color: var(--cordestaque);
+        }
+
+    </style>
+</head>
+<body>
+    <section>
+        <img src="images/avatar-jessica.jpeg" alt="#">
+        <h1>Eliseu Almeida</h1>
+        <p class="localidade">RJ, Rio de Janeiro</p>
+        <p>"Front-end developer and avid reader."</p>
+        <nav>
+            <p><a href="https://github.com/elidevjr" target="_blank">GitHub</a></p>
+            <p><a href="#" target="_blank">Frontend Mentor</a></p>
+            <p><a href="#" target="_blank">Linkedln</a></p>       
+            <p><a href="#" target="_blank">Twitter</a></p>
+            <p><a href="https://www.instagram.com/eliamadsbm/" target="_blank">Instagram</a></p>
+        </nav>
+    </section>
+</body>
+</html>
