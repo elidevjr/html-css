@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1>Exemplo de Formulários</h1>
+    <form action="cadastro.php" method="get">
+
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <p>
+                <label for="inome">Nome:</label>
+                <input type="text" name="nome" id="inome" minlength="5" maxlength="20">
+            </p>
+            <p>
+                <label for="iemail">Email:</label>
+                <input type="email" name="email" id="iemail" autocomplete="email" required>
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" pattern="^\(\d{2}\)[0-9]{4,5}-[0-9]{4,5}$" required placeholder="(XX)XXXX-XXXX" maxlength="14">
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Escolaridade</legend>
+            <p>
+                <label for="imedio">Ensino Médio:</label>
+                <input type="text" name="medio" id="imedio" required minlength="15" maxlength="35" placeholder="CIEP XXX Nome do Ciep">
+            </p>
+            <p>
+                <label for="ilocal">Localidade</label>
+                <input type="text" name="local" id="ilocal" required minlength="10" maxlength="40" placeholder="RJ, Angra dos Reis">
+            </p>
+            <p>
+                <label for="isuperior">Ensino Superior:</label>
+                <input type="text" name="superior" id="isuperior" required minlength="15" maxlength="35" placeholder="Nome do Instituto">
+            </p>
+
+             <p>
+                <label for="ilocal">Localidade</label>
+                <input type="text" name="local" id="ilocal" required minlength="10" maxlength="40" placeholder="RJ, Angra dos Reis">
+            </p>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+
+    </form>
+</body>
+</html>
