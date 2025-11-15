@@ -39,9 +39,14 @@ li:hover {
     background-color: red;
 }
 
-main {
-    text-align: center;
+main, article {
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    padding: 15px;
+    background-color: rgb(110, 110, 110);
 }
+
 
 
 
