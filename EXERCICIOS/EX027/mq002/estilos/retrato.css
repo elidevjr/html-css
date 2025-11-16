@@ -3,7 +3,7 @@
 /* Aparelho em pé */
 
 body {
-    background: black url('../imagens/cev-portrait.jpg') no-repeat center fixed;
+    background: rgb(49, 49, 255) url('../imagens/cev-portrait.jpg') no-repeat center fixed;
     background-size: contain;
     background-position: center bottom;
     

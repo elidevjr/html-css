@@ -3,6 +3,6 @@
 /* Aparelho deitado */
 
 body {
-    background: black url('../imagens/cev-landscape.jpg') no-repeat center fixed;
+    background: rgb(17, 17, 83) url('../imagens/cev-landscape.jpg') no-repeat center fixed;
     background-position: left bottom;
 }
