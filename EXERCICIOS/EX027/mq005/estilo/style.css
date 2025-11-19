@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: 'work sans';
+}
+
+html, body {
+    background-color: rgb(223, 215, 215);
+
+}
+
+header {
+     background-color: gray;
+}
+
+header > h1 {
+    color: rgb(87, 37, 37);
+    text-align: center;
+    padding: 30px;
+}
+
+.material-symbols-outlined {
+    background-color: rgb(83, 82, 82);
+    color: rgb(99, 0, 0);
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+
+.material-symbols-outlined:hover {
+    background-color: rgb(54, 14, 14);
+    color: white;
+}
+
+nav {
+    display: none;
+}
+
+nav a {
+    text-align: center;
+    display: block;
+    border-top: 2px solid rgb(65, 61, 61);
+    padding: 10px;
+    background-color: rgb(77, 76, 76);
+    text-decoration: none;
+    color: white;
+}
+
+nav a:hover {
+    background-color: rgb(78, 33, 33);
+}
+
+main {
+    width: 90vw;
+    background-color: white;
+    padding: 10px;
+    margin: auto;
+    border-radius: 10px;
+}
+
+article > h1 {
+    color: rgb(114, 39, 39);
+    text-align: center;
+}
+
+article > p {
+    margin-bottom: 25px;
+    text-indent: 20px;
+}
+
+#inicio::first-letter {
+    color: rgb(114, 39, 39);
+    font-size: 3em;
+}

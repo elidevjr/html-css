@@ -4,66 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Query</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+    <link rel="stylesheet" href="estilo/style.css" media="all">
+    <link rel="stylesheet" href="estilo/media-query.css">
     <style>
-        * {
-            padding: 0px;
-            margin: 0px;
-            font-family: 'work sans';
-        }
-        body {
-            background-color: rgb(223, 215, 215);
 
-        }
 
-        header {
-            background-color: gray;
-        }
-
-        header > h1 {
-            text-align: center;
-            padding: 20px;
-        }
-
-        nav {
-            padding: 10px;
-        }
-
-        nav a {
-            padding: 9px;
-            background-color: rgb(77, 76, 76);
-            text-decoration: none;
-            color: white;
-        }
-
-        nav a:hover {
-            background-color: rgb(117, 113, 113);
-        }
-
-        main {
-            min-width: 500px;
-            max-width: 750px;
-            background-color: white;
-            padding: 10px;
-            margin: auto;
-            border-radius: 10px;
-        }
+        
 
     </style>
 </head>
 <body>
     <header>
         <h1>Meu Site</h1>
-        <nav>
-            <a href="">Opção 1</a>
-            <a href="">Opção 2</a>
-            <a href="">Opção 3</a>
-            <a href="">Opção 4</a>
-            <a href="#">Opção 5</a>
+        <span class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <nav id="opcoes">
+            <ul>
+                <li class="menu"><a href="">Opção 1</a></li>
+                <li class="menu"><a href="">Opção 2</a></li>
+                <li class="menu"><a href="">Opção 3</a></li>
+                <li class="menu"><a href="">Opção 4</a></li>
+                <li><a href="#">Opção 5</a></li>
+            </ul>
         </nav>
     </header>
     <main>
+        <article>
             <h1>Testando Media Queries</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt porro iure accusamus tempore, consequatur vitae, fuga dolorem delectus ratione est repellat. Beatae sunt quis commodi enim modi laudantium voluptate consequatur alias illum tenetur iste error nobis inventore labore nostrum tempore aliquam hic asperiores culpa neque libero, autem amet! Voluptas, alias!</p>
+            <p id="inicio">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt porro iure accusamus tempore, consequatur vitae, fuga dolorem delectus ratione est repellat. Beatae sunt quis commodi enim modi laudantium voluptate consequatur alias illum tenetur iste error nobis inventore labore nostrum tempore aliquam hic asperiores culpa neque libero, autem amet! Voluptas, alias!
+            </p>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti eum veniam, minima mollitia molestias omnis repellendus ratione unde a totam aspernatur eos, voluptate consequatur eveniet quae accusamus praesentium. Possimus suscipit aliquid, perspiciatis exercitationem reprehenderit perferendis omnis odit tempore, inventore neque quasi laudantium saepe. Culpa veniam laboriosam asperiores consequuntur, magnam ut.
             </p>
@@ -71,6 +41,16 @@
             
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut itaque, quos incidunt accusantium dignissimos saepe consequatur reprehenderit voluptatum enim facilis exercitationem, nulla qui quibusdam animi porro! Nam tempore expedita nemo blanditiis odit deleniti similique architecto, tempora reprehenderit porro quam eum possimus labore! Perspiciatis nobis sit odit, ut inventore fuga alias. Quis quaerat repellendus similique impedit rem magni velit. Tenetur dolorum quas ducimus amet, ipsum quidem eum in perferendis hic ad maxime vero eius voluptates iste tempore non rerum laboriosam quam quae saepe obcaecati, dolore earum, reprehenderit sed! Saepe facere dolores doloremque fugiat veritatis ipsam recusandae quisquam cumque! Delectus, nobis velit?
             </p>
+        </article>
     </main>
+    <script>
+        function clickMenu() {
+            if (opcoes.style.display == 'block') {
+                opcoes.style.display = 'none'
+            } else {
+                opcoes.style.display ='block'
+            }
+        }
+    </script>
 </body>
 </html>
