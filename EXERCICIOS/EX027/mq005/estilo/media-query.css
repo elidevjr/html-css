@@ -1,6 +1,6 @@
 @charset "UTF-8";
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 768px) {
 
 .material-symbols-outlined {
     display: none;
@@ -17,18 +17,9 @@ nav > ul > li {
 
 nav a {
     display: inline-block;
-    text-align: center;
-    border-top: 2px solid rgb(65, 61, 61);
-    padding: 10px;
-    padding-right: 80px;
-    margin: 0px;
-    background-color: rgb(77, 76, 76);
-    color: white;
-    text-decoration: none;
 }
 
-nav a:hover {
-    background-color: rgb(78, 33, 33);
-    color: rgb(250, 221, 221);
+main {
+    width: 768px;
 }
 }
